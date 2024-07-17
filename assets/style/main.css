@@ -1,0 +1,434 @@
+/* !Основные настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  Подключение шрифтов*/
+@font-face {
+  font-family: "Pechenka";
+  src: url(/assets/fonts/pechenka_regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+
+body {
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  background: #ffffff;
+  color: #e90089;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  font-weight: 400;
+}
+
+img {
+  /* Картинки щанимают всё ширину блока */
+  max-width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* !Шапка сайта */
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__img {
+  width: 100px;
+  height: 100px;
+}
+
+.header__list {
+  display: flex;
+  gap: 49px;
+}
+
+.header__menu a {
+  text-transform: uppercase;
+  color: #e90089;
+  opacity: 0.6;
+}
+
+.header__menu .header__link--active {
+  opacity: 1;
+}
+
+.header__btn {
+  width: 205px;
+  height: 56px;
+  background-color: #e90089;
+  color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__btn:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.btn-small {
+  width: 145px;
+  height: 56px;
+  font-size: 16px;
+}
+
+/* !Приветствие */
+.welcome {
+  width: 100%;
+  height: 900px;
+  margin-top: -270px;
+  background-image: url("/assets/image/header-fon2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 300px 0;
+}
+
+.welcome__text {
+  width: 781px;
+}
+
+.welcome__title {
+  font-size: 72px;
+  font-family: "Pechenka";
+  margin-bottom: 58px;
+  letter-spacing: 9px;
+}
+
+.welcome__about {
+  max-width: 663px;
+  max-height: 80px;
+  font-size: 24px;
+  color: #000;
+  margin: 40px 0;
+  opacity: 57%;
+}
+
+/* !Карточки */
+.food-list {
+  padding: 90px 0;
+}
+.food-list .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.food-list__titles {
+  text-align: center;
+  font-family: "Pechenka";
+  font-size: 72px;
+  color: #e90089;
+  margin-bottom: 28px;
+  letter-spacing: 9px;
+}
+.food-list__card {
+  width: 250px;
+  height: 341px;
+  background-color: #d8adc9;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.food-list__img {
+  height: 175px;
+  object-fit: cover;
+}
+
+.food-list__title {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.food-list__desc {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* !Заказ */
+.order {
+  background-color: #bfe6ec;
+  padding: 116px 0;
+}
+
+.order .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.order img {
+  width: 569px;
+  height: 438px;
+}
+.order__text {
+  width: 407px;
+}
+.order__title {
+  font-family: "Pechenka";
+  font-size: 96px;
+  letter-spacing: 10px;
+}
+
+.order__desc {
+  font-family: "Roboto Regular";
+  width: 407px;
+  font-size: 24px;
+  color: black;
+  padding-bottom: 8px;
+}
+
+.order__price {
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  margin-right: 17px;
+}
+.order__old-price {
+  font-family: "Roboto Regular";
+  opacity: 57%;
+}
+
+.order .header__btn {
+  margin-top: 8px;
+}
+
+.price {
+}
+
+.download {
+  background-color: #e4d8ee;
+  padding: 130px 0;
+}
+.download .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.download__title {
+  font-family: "Pechenka";
+  letter-spacing: 9px;
+  font-size: 72px;
+  opacity: 57%;
+  margin-left: 140px;
+}
+.download .header__btn {
+  margin-right: 140px;
+}
+
+.price {
+  padding: 137px 0;
+}
+.price .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.price__card {
+  width: 560px;
+  height: 300px;
+  padding: 3px 21px 72px 278px;
+}
+
+.price__card:nth-child(even) {
+  padding-left: 21px;
+  padding-right: 278px;
+}
+
+.price__title {
+  font-family: "Pechenka";
+  font-size: 64px;
+  letter-spacing: 10px;
+  margin-bottom: 4px;
+}
+.price__desc {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  max-width: 277px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.price__price {
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  margin-right: 17px;
+}
+.price__old-price {
+  font-family: "Roboto Regular";
+  opacity: 57%;
+  font-size: 18px;
+}
+.price .header__btn {
+  margin-top: 4px;
+}
+
+.latte-card {
+  /* background-image: url(../image/donate/latte.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; */
+
+  background-color:#bfe6ec;
+  
+}
+
+.cafe-card {
+  /* background-image: url(../image/donate/cafe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color: #e90089;
+  color:#bfe6ec;
+}
+
+.cafe-card .header__btn{
+ background-color:#bfe6ec;
+ color:#e90089
+}
+.donate-card .header__btn{
+  background-color:#bfe6ec;
+  color:#e90089
+ }
+
+.donate-card {
+  /* background-image: url(../image/donate/pon1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color: #e90089;
+  color:#bfe6ec;
+
+}
+
+.cafe2-card {
+  /* background-image: url(../image/donate/cafe2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color:#bfe6ec;
+}
+
+
+.footer{
+padding: 80px 0 133px 0;
+background-color:#A3E3ED;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  
+  
+}
+.footer a {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Regular";
+  font-size: 18px;
+}
+
+.footer .footer__title {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Medium";
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+
+
+.footer__logo{
+width: 60px;
+height: 60px;
+display: inline-block;
+margin-bottom: 22px;
+}
+.footer__socials-icon{
+width: 20px;
+height: 20px;
+}
+
+.footer__link +.footer__link{
+  margin-top: 11px;
+}
+.footer__list{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+}
+
+.footer__contacts{
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+
+}
+.footer_list-item + .footer_list-item{
+  margin-top: 8px;
+}
+
+.footer__socials-icon +.footer__socials-icon{
+  margin-left: 6px;
+}
+
+  /* ширина устройств ДО 800 Px */
+@media (max-width:1100px){
+
+  .header__img {
+    width: 70px;
+    height: 70px;
+  }
+  .header__list {
+    font-size: 16px;
+    gap: 40px;
+  }
+  .header__btn {
+    width: 180px;
+    height: 36px;
+    font-size: 16px;
+  
+  }
+}
